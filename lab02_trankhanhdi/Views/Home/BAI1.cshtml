@@ -1,0 +1,353 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <meta charset="utf-8" />
+
+    <title>Lab 02 - CSS</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #333;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+   
+
+        #container {
+            width: 800px;
+            margin: auto;
+            background-color: #fff;
+            border: 1px solid #000;
+        }
+        #navigator {
+            background-color: #c54868;
+            height: 50px;
+            padding: 10px 15px;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+            #navigator .menu-left {
+                display: flex;
+                gap: 15px;
+                font-size: 13px;
+                font-weight: normal;
+            }
+
+            #navigator .menu-title {
+                font-size: 20px;
+            }
+        #banner {
+            position: relative;
+            height: 200px;
+            background-image: url("https://kenh14cdn.com/203336854389633024/2021/10/14/zeros-sbtc-2-16342218082682100217510.jpg");
+            background-size: cover;
+            background-position: center top;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            #banner::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(63, 81, 181, 0.15);
+            }
+
+           
+
+            #banner h1 {
+                position: relative;
+                color: white;
+                font-size: 32px;
+                letter-spacing: 2px;
+                z-index: 1;
+            }
+
+      
+
+            #banner .logo-text {
+                position: absolute;
+                right: 15px;
+                bottom: 15px;
+                color: rgba(255, 255, 255, 0.8);
+                font-size: 18px;
+                z-index: 1;
+            }
+
+
+        
+        .main-body {
+            display: flex;
+            min-height: 400px;
+        }
+
+
+ 
+        #content {
+            width: 60%;
+            background-color: #81c784;
+            padding: 20px;
+            color: #2e7d32;
+            font-size: 13px;
+            line-height: 1.5;
+            position: relative;
+        }
+
+
+  
+        #sidebar {
+            width: 40%;
+            background-color: #558b2f;
+            padding: 20px;
+            color: #dcedc8;
+            font-size: 13px;
+            line-height: 1.5;
+            position: relative;
+        }
+        .watermark {
+            position: absolute;
+            color: rgba(255, 255, 255, 0.85);
+            font-weight: bold;
+            pointer-events: none;
+        }
+
+        #content .watermark {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 36px;
+        }
+
+        #sidebar .watermark {
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 28px;
+            white-space: nowrap;
+        }
+
+
+     
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #1b5e20;
+        }
+
+        #sidebar .section-title {
+            color: #fff;
+        }
+
+
+     
+        .text-block {
+            margin-bottom: 15px;
+        }
+
+
+     
+        #footer {
+            background-color: #ae7023;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+    <div id="container">
+
+
+        <div id="navigator">
+
+            <div class="menu-left">
+
+                <span>ABOUT</span>
+
+                <span>SERVICES</span>
+
+                <span>PORTFOLIO</span>
+
+                <span>CONTACT US</span>
+
+            </div>
+
+            <div class="menu-title">
+
+                MAIN MENU
+
+            </div>
+
+        </div>
+
+
+        <div id="banner">
+
+            <h1>
+                HEADER
+            </h1>
+
+            <div class="logo-text">
+                ZEROS
+            </div>
+
+        </div>
+
+
+       
+
+        <div class="main-body">
+
+
+            <div id="content">
+
+                <div class="watermark">
+                    CONTENT
+                </div>
+
+
+                <div class="section-title">
+                    ABOUT
+                </div>
+
+
+                <div class="text-block">
+
+                    Enlighten Designs is an Internet solutions provider
+                    that specializes in front and back end development.
+                    To view some of the web sites we have created
+                    view our portfolio.
+
+                </div>
+
+
+                <div class="text-block">
+
+                    We are currently undergoing a facelift, so if you
+                    have any questions or would like more information
+                    about the services we provide please feel free to
+                    contact us.
+
+                </div>
+
+
+                <div class="section-title">
+
+                    CONTACT US
+
+                </div>
+
+
+                <div class="text-block">
+
+                    Phone: (07) 853 6060
+                    <br />
+
+                    Fax: (07) 853 6050
+                    <br />
+
+                    Email: info@enlighten.co.nz
+                    <br />
+
+                    PO Box: 14159, Hamilton, New Zealand
+
+                </div>
+
+            </div>   
+            <div id="sidebar">
+
+                <div class="watermark">
+                    SIDE BAR
+                </div>
+
+
+                <div class="section-title">
+
+                    FEATURED PROJECTS
+
+                </div>
+                <div class="text-block">
+
+                    <strong>
+                        The New Zealand National Party
+                    </strong>
+
+                    <br />
+
+                    We recently launched the new website...
+
+                </div>
+
+
+                <div class="text-block">
+
+                    <strong>
+                        Greenscene
+                    </strong>
+
+                    <br />
+
+                    We recently launched the Greenscene website...
+
+                </div>
+
+
+                <div class="text-block">
+
+                    <strong>
+                        Nutritive Care
+                    </strong>
+
+                    <br />
+
+                    We recently launched the Nutritive Care website...
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <div id="footer">
+
+            FOOTER
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

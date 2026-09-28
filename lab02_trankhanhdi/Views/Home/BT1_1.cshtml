@@ -1,0 +1,108 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<head>
+    <title></title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h2.title {
+            text-align: center;
+            font-weight: bold;
+        }
+
+            h2.title u {
+                text-decoration: underline;
+            }
+
+        h3.section-title {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        /* Định dạng Bảng */
+        table.custom-table {
+            border-collapse: collapse;
+            color: #ffffff;
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 18px;
+        }
+
+            /* Hàng tiêu đề (header) */
+            table.custom-table th {
+                background-color: #000000; /* Nền đen */
+                color: #ffffff;
+                padding: 8px 25px;
+                text-align: center;
+                border: 1px solid #00ffff; /* Viền xanh sáng */
+                font-weight: normal;
+            }
+
+            /* Cột đầu tiên (colum1) */
+            table.custom-table td:first-child {
+                background-color: #00008b; /* Nền xanh đậm / Dark blue */
+                color: #ffffff;
+                font-weight: bold;
+            }
+
+            /* Các ô nội dung khác (colum2, colum3, colum4) */
+            table.custom-table td {
+                background-color: #008b8b; /* Nền xanh ngọc / Dark cyan */
+                color: #ffffff;
+                padding: 8px 25px;
+                text-align: center;
+                border: 1px solid #00ffff; /* Viền xanh sáng */
+            }
+    </style>
+</head>
+<body>
+
+
+
+
+    <table class="custom-table">
+        <thead>
+            <tr>
+                <th>header1</th>
+                <th>header2</th>
+                <th>header3</th>
+                <th>header4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>colum1</td>
+                <td>colum2</td>
+                <td>colum3</td>
+                <td>colum4</td>
+            </tr>
+            <tr>
+                <td>colum1</td>
+                <td>colum2</td>
+                <td>colum3</td>
+                <td>colum4</td>
+            </tr>
+            <tr>
+                <td>colum1</td>
+                <td>colum2</td>
+                <td>colum3</td>
+                <td>colum4</td>
+            </tr>
+            <tr>
+                <td>colum1</td>
+                <td>colum2</td>
+                <td>colum3</td>
+                <td>colum4</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

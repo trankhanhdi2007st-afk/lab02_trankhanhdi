@@ -1,0 +1,390 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <meta charset="utf-8" />
+
+    <title>Bài 2 - Bố cục trang web</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #777;
+        }
+
+      
+        #container {
+            width: 760px;
+            margin: 20px auto;
+        }
+
+
+
+
+        #menu {
+            height: 38px;
+            background-color: white;
+            position: relative;
+        }
+
+            #menu a {
+                display: inline-block;
+                padding: 14px 12px 10px 12px;
+                color: #666;
+                text-decoration: none;
+                font-size: 10px;
+            }
+
+                #menu a:hover {
+                    color: #e87510;
+                }
+
+       
+
+            #menu .active {
+                background-color: #ed790c;
+                color: white;
+                height: 38px;
+                padding-left: 18px;
+                padding-right: 18px;
+            }
+
+
+        #banner {
+            height: 145px;
+            background-image: url("https://kenh14cdn.com/203336854389633024/2021/10/14/zeros-sbtc-2-16342218082682100217510.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+            
+            #banner::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                background-color: rgba(255, 255, 255, 0.15);
+            }
+
+     
+
+        #logo {
+            position: absolute;
+            right: 20px;
+            top: 60px;
+            z-index: 2;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 8px 15px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+
+
+        #main {
+            display: flex;
+            gap: 40px;
+            padding: 20px 25px 15px 25px;
+        }
+
+
+      
+
+        #about {
+            width: 55%;
+        }
+
+      
+
+        #projects {
+            width: 45%;
+        }
+
+
+        
+
+        .title {
+            color: #e87510;
+            font-size: 14px;
+            margin-bottom: 14px;
+            font-weight: normal;
+        }
+
+
+       
+
+        p {
+            font-size: 10px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            color: #777;
+        }
+
+
+
+        a {
+            color: #e87510;
+            text-decoration: none;
+        }
+
+
+     
+
+        #contact {
+            margin-top: 18px;
+        }
+
+            #contact p {
+                margin-bottom: 3px;
+            }
+
+
+   
+
+        .project {
+            margin-bottom: 18px;
+        }
+
+            .project h4 {
+                margin-bottom: 3px;
+                color: #777;
+                font-size: 11px;
+            }
+
+            .project p {
+                margin: 0;
+            }
+
+
+     
+        #footer {
+            border-top: 1px solid #ddd;
+            margin: 0 25px;
+            padding: 12px 0;
+            display: flex;
+            justify-content: space-between;
+            font-size: 8px;
+            color: #bbb;
+        }
+
+            #footer a {
+                color: #bbb;
+                margin-left: 10px;
+            }
+    </style>
+
+</head>
+
+
+<body>
+
+    <div id="container">
+
+
+       
+
+        <div id="menu">
+
+            <a href="#" class="active">
+                ABOUT
+            </a>
+
+            <a href="#">
+                SERVICES
+            </a>
+
+            <a href="#">
+                PORTFOLIO
+            </a>
+
+            <a href="#">
+                CONTACT US
+            </a>
+
+        </div>
+
+
+        
+
+        <div id="banner">
+
+            <div id="logo">
+                ZEROS
+            </div>
+
+        </div>
+
+
+  
+
+        <div id="main">
+
+
+          =
+
+            <div id="about">
+
+                <div class="title">
+                    ABOUT
+                </div>
+
+                <p>
+                    <strong>Enlighten Designs</strong> is an Internet
+                    solutions provider that specialises in front and
+                    back end development. To view some of the sites
+                    we have created view our
+                    <a href="#">portfolio</a>.
+                </p>
+
+                <p>
+                    We are currently undergoing a 'facelift', so if you
+                    have any questions or would like more information
+                    about the services we provide please feel free to
+                    contact us.
+                </p>
+
+=
+
+                <div id="contact">
+
+                    <div class="title">
+                        CONTACT US
+                    </div>
+
+                    <p>
+                        Phone: &nbsp;&nbsp; (07) 853 6060
+                    </p>
+
+                    <p>
+                        Fax: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (07) 853 6060
+                    </p>
+
+                    <p>
+                        Email: &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="#">
+                            info@enlighten.co.nz
+                        </a>
+                    </p>
+
+                    <p>
+                        PO Box: &nbsp;&nbsp; 14159, Hamilton,
+                        New Zealand
+                    </p>
+
+                    <p>
+                        <a href="#">
+                            More contact information...
+                        </a>
+                    </p>
+
+                </div>
+
+            </div>
+
+
+       =
+
+            <div id="projects">
+
+                <div class="title">
+                    FEATURED PROJECTS
+                </div>
+
+
+                <div class="project">
+
+                    <h4>
+                        The New Zealand National Party
+                    </h4>
+
+                    <p>
+                        We recently launched the
+                        <a href="#">
+                            New Zealand National Party
+                        </a>
+                        website - Lorem ipsum dolor sit amet.
+                    </p>
+
+                </div>
+
+
+                <div class="project">
+
+                    <h4>
+                        Greensites
+                    </h4>
+
+                    <p>
+                        We recently launched the
+                        <a href="#">
+                            Greensites
+                        </a>
+                        website - Lorem ipsum dolor sit amet.
+                    </p>
+
+                </div>
+
+
+                <div class="project">
+
+                    <h4>
+                        Nutrition Care
+                    </h4>
+
+                    <p>
+                        We recently launched the
+                        <a href="#">
+                            Nutrition Care
+                        </a>
+                        website - Lorem ipsum dolor sit amet.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div id="footer">
+
+            <span>
+                Copyright © Enlighten Designs
+            </span>
+
+            <span>
+
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Contact Us</a>
+
+            </span>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
